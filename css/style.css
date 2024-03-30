@@ -1,0 +1,198 @@
+/* Common Css Start */
+:root {
+    --highlight-color: #8484bf;
+    --primary-color: #0f2f44;
+    --light-color: #fefefe;
+    --hover-color: #ffc712;
+    --icon-color: #999999;
+    --text-color: #444444;
+    --border-color: #dedede;
+    --hover-background: #fff9e6;
+    --heading-font: "Abril Fatface", serif;
+    --secondary-font: "Ubuntu", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    font-family: var(--body-font);
+}
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: var(--secondary-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.w-50 {
+    width: 50%;
+}
+.w-33 {
+    width: calc(100% / 3);
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+/* Common Css End */
+
+/* =========== Top Bar Section Css Start =========== */
+#top_bar {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+}
+#top_bar p {
+    line-height: 24px;
+    padding: 13px 0;
+}
+/* =========== Top Bar Section Css End =========== */
+
+/* =========== Nav Section Css Start =========== */
+#nav .menu ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 35.5px 19px;
+    display: inline-block;
+    transition: 0.4s;
+    
+}
+
+#nav .menu ul li button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--icon-color);
+    background: none;
+    margin-left: 20px;
+    transition: 0.4s;
+    
+}
+#nav .menu ul li a:hover,
+#nav .menu ul li button:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-background);
+}
+/* =========== Nav Section Css End =========== */
+
+/* =========== Hero Section Css Start =========== */
+#hero {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+#hero .inner_container {
+    width: 40%
+    
+}
+#hero .inner_container h1 {
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 80px;
+    
+}
+#hero .inner_container h3 {
+      
+   font-weight:300;
+   font-size: 50px;
+   color: var(--primary-color);
+  line-height: 20px;
+}
+
+#hero .inner_container h4 {
+    line-height: 20px;
+    
+    font-weight: 400;
+    font-size:32px;
+    letter-spacing: 18px;
+    color: #8484bf; 
+}
+
+#hero .inner_container p {
+    width:470px; 
+    font-size: 14px;
+    line-height: 24px;
+    color:#444444;
+    margin:30px 0;
+
+
+
+}
+
+#hero a {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px;
+    border-radius: 8px;
+    transition: 0.4s;
+    
+}
+#hero a:hover {
+    background-color: var(--light-color);
+    color: var(--highlight-color);
+}
+#hero button {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    border: none;
+    color: var(--highlight-color);
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+#hero button:hover {
+    background-color: var(--highlight-color);
+    color: var(--light-color);
+}
+/* =========== Hero Section Css End =========== */
